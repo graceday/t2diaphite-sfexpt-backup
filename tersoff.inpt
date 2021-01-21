@@ -14,10 +14,6 @@ pair_coeff * * /usr/local/Cellar/lammps/2020-10-29/share/lammps/potentials/SiCGe
 thermo 10
 thermo_style custom step atoms temp pe etotal vol density
 
-dump 1 all atom 1 visual.lammpstrj
-
-dump_modify 1 scale no
-dump_modify 1 first yes
 # MINIMISATION: syntax = minimise etol ftol maxiter maxeval
 minimize 1.0e-8 0.0 100000 100000
 
@@ -26,4 +22,4 @@ variable volume_per_atom equal vol/atoms
 print ${total_energy_per_atom} file ./energy.dat
 print ${volume_per_atom} file ./volume.dat
 
-undump 1
+write_data final_position_tersoff.data
