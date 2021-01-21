@@ -1,0 +1,1 @@
+python ./rd_data_3D.py --SFs $(cat scalefactors.txt) --SEQ $(cat sequences.txt) --pot "$1"
