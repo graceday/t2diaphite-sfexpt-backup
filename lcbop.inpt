@@ -9,7 +9,7 @@ mass 1 12.00
 
 pair_style lcbop
 # pair_coeff * * /usr/local/Cellar/lammps/2020-10-29/share/lammps/potentials/C.lcbop C
-pair_coeff * * /home/dirac/oxford/newc5436/LAMMPS_potentials/SiCGe.tersoff C
+pair_coeff * * /home/dirac/oxford/newc5436/LAMMPS_potentials/C.lcbop C
 
 thermo 10
 thermo_style custom step atoms temp pe etotal vol density
